@@ -1,0 +1,17 @@
+{
+  "name": "geolocate-node",
+  "version": "1.0.0",
+  "description": "Geolocation Service",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rachel Okimoto",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.12.4",
+    "node-static": "^0.7.6",
+    "socket.io": "^1.3.5"
+  }
+}
