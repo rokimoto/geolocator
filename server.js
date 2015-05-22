@@ -4,7 +4,7 @@ var app = http.createServer(handler);
 var io = require('socket.io').listen(app);
 
 // define port
-var port = 8080;
+var port = process.env.PORT || 5000;
 
 // make html, js & css files accessible
 var files = new static.Server('./public');
@@ -29,4 +29,4 @@ io.sockets.on('connection', function (socket) {
 
 // starts app on specified port
 app.listen(port);
-console.log('Your server goes on localhost:' + port);
+console.log('Listening on port ' + port);
